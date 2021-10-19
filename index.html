@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>aplicatie</title>
+    <link rel='stylesheet' type="text/css" href="CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="main-header">
+            <h2>HTML and CSS</h2>
+        </div>
+    </header>
+
+    <div class="rand2">
+        <div class="image col">
+            <img src="images/image.png" alt="HTML and CSS">
+        </div>
+
+        <div class="list col">
+            <ul class="clasalista">
+                <li id="tutorials">Top Tutorials</li>
+                <br>
+                <li>HTML Tutorial</li>
+                <li>CSS Tutorial</li>
+                <li>JavaScript Tutorial</li>
+                <li>How To Tutorial</li>
+                <li>SQL Tutorial</li>
+                <li>Python Tutorial</li>
+                <li>W3.CSS Tutorial</li>
+                <li>Bootstrap Tutorial</li>
+                <li>PHP Tutorial</li>
+                <li>Java Tutorial</li>
+                <li>C++ Tutorial</li>
+                <li id="ultimul"><a href="http://www.google.com " target="_blank"> iQuery Tutorial</a></li>
+            </ul>
+        </div>
+
+        <div class="input col">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+            <br>
+
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age">
+            <br>
+
+            <p id="gender">Gender:</p>
+            <input type="radio" name="gender" id="genderinput" value="Male">
+            <label for="genderinput">Male</label>
+            <input type="radio" name="gender" id="genderinput" value="Female">
+            <label for="genderinput">Female</label>
+            <br>
+
+            <label>Comments:</label>
+            <textarea id="textarea" rows="5" name="comments"></textarea>
+            <div class="clasabuton1">
+                <button id="buton1" onclick="apearPopup()">submit</button>
+            </div>
+
+            <script>
+                 function apearPopup() {
+                     var nume = document.getElementById('name').value;
+                     if (nume === '') {
+                        alert('Please add a name');
+                     } else {
+                        alert(`${nume}`);
+                     }
+                 }
+            </script>
+        </div>
+    </div>
+
+    <div class="chenar">
+        <table border="1px" id="tabel">
+            <tr>
+                <th>No</th>
+                <th>Activity</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>Sports</td>
+                <td>10.10.2001</td>
+                <td>
+                    <select name="status">
+                        <option value="open">open</option>
+                        <option value="in progress">in progress</option>
+                        <option value="done">done</option>
+                    </select>
+                </td>
+                <td>
+                    <button type="button" id="buton2"> EDIT </button>
+                    <button type="button" id="buton2"> DELETE </button>
+                </td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Painting</td>
+                <td>15.10.2001</td>
+                <td>
+                    <select name="status">
+                        <option value="open">open</option>
+                        <option value="in progress">in progress</option>
+                        <option value="done">done</option>
+                    </select>
+                </td>
+                <td>
+                    <button type="button" id="buton2"> EDIT </button>
+                    <button type="button" id="buton2"> DELETE </button>
+                </td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>School</td>
+                <td>12.10.2001</td>
+                <td>
+                    <select name="status">
+                        <option value="open">open</option>
+                        <option value="in progress">in progress</option>
+                        <option value="done">done</option>
+                    </select>
+                </td>
+                <td>
+                    <button type="button" id="buton2"> EDIT </button>
+                    <button type="button" id="buton2"> DELETE </button>
+                </td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Singing</td>
+                <td>16.10.2001</td>
+                <td>
+                    <select name="status">
+                        <option value="open">open</option>
+                        <option value="in progress">in progress</option>
+                        <option value="done">done</option>
+                    </select>
+                </td>
+                <td>
+                    <button type="button" id="buton2"> EDIT </button>
+                    <button type="button" id="buton2"> DELETE </button>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+
+</html>
